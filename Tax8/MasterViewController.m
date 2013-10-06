@@ -7,6 +7,7 @@
 //
 
 #import "MasterViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface MasterViewController () {
     
@@ -25,13 +26,9 @@
     [super viewDidLoad];
     
     tesseract = [[Tesseract alloc] initWithDataPath:@"tessdata" language:@"eng"];
-    [tesseract setVariableValue:@"0123456789," forKey:@"tessedit_char_whitelist"];
+    [tesseract setVariableValue:@"0123456789" forKey:@"tessedit_char_whitelist"];
     
-    if (TARGET_IPHONE_SIMULATOR) {
-        [self setupTestAVCapture];
-    } else {
-        [self setupAVCapture];
-    }
+    [self configureView];
     
     [self addTimer];
 }
@@ -40,6 +37,20 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)configureView {
+    if (TARGET_IPHONE_SIMULATOR) {
+        [self setupTestAVCapture];
+    } else {
+        [self setupAVCapture];
+    }
+    
+    CALayer *borderLayer = [CALayer layer];
+    [borderLayer setBorderColor:[UIColor redColor].CGColor];
+    [borderLayer setBorderWidth:1.f];
+    [borderLayer setFrame:CGRectMake(10, 125, 300, 70)];
+    [previewView.layer addSublayer:borderLayer];
 }
 
 #pragma mark - Timer
@@ -162,7 +173,7 @@
     
     image = [self convertToGrayScale:image];
     image = [self scaleAndRotateImage:image];
-    captureImage = [self imageByCropping:image toRect:CGRectMake(0, 90, image.size.width, 40)];
+    captureImage = [self imageByCropping:image toRect:CGRectMake(0, 90, image.size.width, 35)];
 }
 
 #pragma mark - Others

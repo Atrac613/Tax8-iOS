@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		061FACEA1801200A00CD2F15 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061FACE91801200A00CD2F15 /* CoreImage.framework */; };
+		062109111801963C001A73AD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 062109101801963C001A73AD /* QuartzCore.framework */; };
 		0661887918002A8A00982B38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0661887818002A8A00982B38 /* Foundation.framework */; };
 		0661887B18002A8A00982B38 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0661887A18002A8A00982B38 /* CoreGraphics.framework */; };
 		0661887D18002A8A00982B38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0661887C18002A8A00982B38 /* UIKit.framework */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		061FACE91801200A00CD2F15 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		062109101801963C001A73AD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0661887518002A8A00982B38 /* Tax8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tax8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0661887818002A8A00982B38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0661887A18002A8A00982B38 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -78,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				062109111801963C001A73AD /* QuartzCore.framework in Frameworks */,
 				066188D91800581200982B38 /* libstdc++.6.dylib in Frameworks */,
 				066188D5180056AE00982B38 /* TesseractOCR.framework in Frameworks */,
 				061FACEA1801200A00CD2F15 /* CoreImage.framework in Frameworks */,
@@ -125,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				066188D81800581200982B38 /* libstdc++.6.dylib */,
+				062109101801963C001A73AD /* QuartzCore.framework */,
 				061FACE91801200A00CD2F15 /* CoreImage.framework */,
 				066188D61800578B00982B38 /* AVFoundation.framework */,
 				066188CF18004EB800982B38 /* TesseractOCR.framework */,
