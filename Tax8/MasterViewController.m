@@ -40,6 +40,8 @@
 }
 
 - (void)configureView {
+    [self.navigationItem setTitle:@"Tax8"];
+    
     if (TARGET_IPHONE_SIMULATOR) {
         [self setupTestAVCapture];
     } else {
