@@ -14,6 +14,10 @@
     IBOutlet UIView *previewView;
     IBOutlet UIImageView *previewImageView;
     
+    IBOutlet UILabel *currentPriceLabel;
+    IBOutlet UILabel *tax5PriceLabel;
+    IBOutlet UILabel *tax8PriceLabel;
+    
     AVCaptureVideoPreviewLayer *previewLayer;
     AVCaptureSession *session;
     

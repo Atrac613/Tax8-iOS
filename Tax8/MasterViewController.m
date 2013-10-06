@@ -133,11 +133,35 @@
     [tesseract setImage:image];
     [tesseract recognize];
     
-    NSLog(@"Number: %@", [tesseract recognizedText]);
+    NSString *recognizedString = [tesseract recognizedText];
+    [self configureTaxView:recognizedString];
     
     [tesseract clear];
     
     previewImageView.image = [UIImage imageWithCGImage:image.CGImage];
+}
+
+- (void)configureTaxView:(NSString*)recognizedString {
+    NSArray *prices = [recognizedString componentsSeparatedByString:@"\n"];
+    NSString *rawString = [prices objectAtIndex:0];
+    NSString *currentPriceString = [rawString stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    NSLog(@"Recognized String: %@", recognizedString);
+    
+    NSNumberFormatter *format = [[NSNumberFormatter alloc] init];
+    [format setNumberStyle:NSNumberFormatterDecimalStyle];
+    [format setGroupingSeparator:@","];
+    [format setGroupingSize:3];
+    [format setMinimumFractionDigits:0];
+    
+    NSNumber *currentPriceNumber = [NSNumber numberWithInt:[currentPriceString intValue]];
+    [currentPriceLabel setText:[format stringFromNumber:currentPriceNumber]];
+    
+    NSNumber *tax5PriceNumber = [NSNumber numberWithInt:round([currentPriceNumber intValue] * 1.05f)];
+    [tax5PriceLabel setText:[format stringFromNumber: tax5PriceNumber]];
+    
+    NSNumber *tax8PriceNumber = [NSNumber numberWithInt:round([currentPriceNumber intValue] * 1.08f)];
+    [tax8PriceLabel setText:[format stringFromNumber: tax8PriceNumber]];
 }
 
 #pragma mark - AVCaptureVideoDataOutputSampleBufferDelegate
