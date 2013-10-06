@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		061FACEA1801200A00CD2F15 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061FACE91801200A00CD2F15 /* CoreImage.framework */; };
+		0661887918002A8A00982B38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0661887818002A8A00982B38 /* Foundation.framework */; };
+		0661887B18002A8A00982B38 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0661887A18002A8A00982B38 /* CoreGraphics.framework */; };
+		0661887D18002A8A00982B38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0661887C18002A8A00982B38 /* UIKit.framework */; };
+		0661888318002A8A00982B38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0661888118002A8A00982B38 /* InfoPlist.strings */; };
+		0661888518002A8A00982B38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0661888418002A8A00982B38 /* main.m */; };
+		0661888918002A8A00982B38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0661888818002A8A00982B38 /* AppDelegate.m */; };
+		0661888C18002A8A00982B38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0661888A18002A8A00982B38 /* Main.storyboard */; };
+		0661888F18002A8A00982B38 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0661888E18002A8A00982B38 /* MasterViewController.m */; };
+		0661889418002A8A00982B38 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0661889318002A8A00982B38 /* Images.xcassets */; };
+		0661889B18002A8A00982B38 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0661889A18002A8A00982B38 /* XCTest.framework */; };
+		0661889C18002A8A00982B38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0661887818002A8A00982B38 /* Foundation.framework */; };
+		0661889D18002A8A00982B38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0661887C18002A8A00982B38 /* UIKit.framework */; };
+		066188A518002A8A00982B38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 066188A318002A8A00982B38 /* InfoPlist.strings */; };
+		066188A718002A8A00982B38 /* Tax8Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 066188A618002A8A00982B38 /* Tax8Tests.m */; };
+		066188D5180056AE00982B38 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 066188CF18004EB800982B38 /* TesseractOCR.framework */; };
+		066188D71800578B00982B38 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 066188D61800578B00982B38 /* AVFoundation.framework */; };
+		066188D91800581200982B38 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 066188D81800581200982B38 /* libstdc++.6.dylib */; };
+		066188EF18005C8200982B38 /* eng.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = 066188EB18005C8200982B38 /* eng.traineddata */; };
+		066188F018005C8200982B38 /* equ.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = 066188EC18005C8200982B38 /* equ.traineddata */; };
+		066188F118005C8200982B38 /* grc.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = 066188ED18005C8200982B38 /* grc.traineddata */; };
+		066188F218005C8200982B38 /* ita.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = 066188EE18005C8200982B38 /* ita.traineddata */; };
+		066188F41800684600982B38 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 066188F31800684600982B38 /* test.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0661889E18002A8A00982B38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0661886D18002A8A00982B38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0661887418002A8A00982B38;
+			remoteInfo = Tax8;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		061FACE91801200A00CD2F15 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		0661887518002A8A00982B38 /* Tax8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tax8.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0661887818002A8A00982B38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0661887A18002A8A00982B38 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0661887C18002A8A00982B38 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0661888018002A8A00982B38 /* Tax8-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tax8-Info.plist"; sourceTree = "<group>"; };
+		0661888218002A8A00982B38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0661888418002A8A00982B38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0661888618002A8A00982B38 /* Tax8-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tax8-Prefix.pch"; sourceTree = "<group>"; };
+		0661888718002A8A00982B38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0661888818002A8A00982B38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0661888B18002A8A00982B38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0661888D18002A8A00982B38 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		0661888E18002A8A00982B38 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		0661889318002A8A00982B38 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0661889918002A8A00982B38 /* Tax8Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tax8Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0661889A18002A8A00982B38 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		066188A218002A8A00982B38 /* Tax8Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tax8Tests-Info.plist"; sourceTree = "<group>"; };
+		066188A418002A8A00982B38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		066188A618002A8A00982B38 /* Tax8Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tax8Tests.m; sourceTree = "<group>"; };
+		066188CF18004EB800982B38 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TesseractOCR.framework; path = TesseractOCR/TesseractOCR.framework; sourceTree = "<group>"; };
+		066188D61800578B00982B38 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		066188D81800581200982B38 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+		066188EB18005C8200982B38 /* eng.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = eng.traineddata; sourceTree = "<group>"; };
+		066188EC18005C8200982B38 /* equ.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = equ.traineddata; sourceTree = "<group>"; };
+		066188ED18005C8200982B38 /* grc.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = grc.traineddata; sourceTree = "<group>"; };
+		066188EE18005C8200982B38 /* ita.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = ita.traineddata; sourceTree = "<group>"; };
+		066188F31800684600982B38 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test.png; path = TesseractOCR/test.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0661887218002A8A00982B38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				066188D91800581200982B38 /* libstdc++.6.dylib in Frameworks */,
+				066188D5180056AE00982B38 /* TesseractOCR.framework in Frameworks */,
+				061FACEA1801200A00CD2F15 /* CoreImage.framework in Frameworks */,
+				0661887B18002A8A00982B38 /* CoreGraphics.framework in Frameworks */,
+				066188D71800578B00982B38 /* AVFoundation.framework in Frameworks */,
+				0661887D18002A8A00982B38 /* UIKit.framework in Frameworks */,
+				0661887918002A8A00982B38 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0661889618002A8A00982B38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0661889B18002A8A00982B38 /* XCTest.framework in Frameworks */,
+				0661889D18002A8A00982B38 /* UIKit.framework in Frameworks */,
+				0661889C18002A8A00982B38 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0661886C18002A8A00982B38 = {
+			isa = PBXGroup;
+			children = (
+				0661887E18002A8A00982B38 /* Tax8 */,
+				066188A018002A8A00982B38 /* Tax8Tests */,
+				066188B218003D1000982B38 /* Resources */,
+				0661887718002A8A00982B38 /* Frameworks */,
+				0661887618002A8A00982B38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0661887618002A8A00982B38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0661887518002A8A00982B38 /* Tax8.app */,
+				0661889918002A8A00982B38 /* Tax8Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0661887718002A8A00982B38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				066188D81800581200982B38 /* libstdc++.6.dylib */,
+				061FACE91801200A00CD2F15 /* CoreImage.framework */,
+				066188D61800578B00982B38 /* AVFoundation.framework */,
+				066188CF18004EB800982B38 /* TesseractOCR.framework */,
+				0661887818002A8A00982B38 /* Foundation.framework */,
+				0661887A18002A8A00982B38 /* CoreGraphics.framework */,
+				0661887C18002A8A00982B38 /* UIKit.framework */,
+				0661889A18002A8A00982B38 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0661887E18002A8A00982B38 /* Tax8 */ = {
+			isa = PBXGroup;
+			children = (
+				0661888718002A8A00982B38 /* AppDelegate.h */,
+				0661888818002A8A00982B38 /* AppDelegate.m */,
+				0661888A18002A8A00982B38 /* Main.storyboard */,
+				0661888D18002A8A00982B38 /* MasterViewController.h */,
+				0661888E18002A8A00982B38 /* MasterViewController.m */,
+				0661889318002A8A00982B38 /* Images.xcassets */,
+				0661887F18002A8A00982B38 /* Supporting Files */,
+			);
+			path = Tax8;
+			sourceTree = "<group>";
+		};
+		0661887F18002A8A00982B38 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0661888018002A8A00982B38 /* Tax8-Info.plist */,
+				0661888118002A8A00982B38 /* InfoPlist.strings */,
+				0661888418002A8A00982B38 /* main.m */,
+				0661888618002A8A00982B38 /* Tax8-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		066188A018002A8A00982B38 /* Tax8Tests */ = {
+			isa = PBXGroup;
+			children = (
+				066188A618002A8A00982B38 /* Tax8Tests.m */,
+				066188A118002A8A00982B38 /* Supporting Files */,
+			);
+			path = Tax8Tests;
+			sourceTree = "<group>";
+		};
+		066188A118002A8A00982B38 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				066188A218002A8A00982B38 /* Tax8Tests-Info.plist */,
+				066188A318002A8A00982B38 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		066188B218003D1000982B38 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				066188F31800684600982B38 /* test.png */,
+				066188EA18005C8200982B38 /* tessdata */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		066188EA18005C8200982B38 /* tessdata */ = {
+			isa = PBXGroup;
+			children = (
+				066188EB18005C8200982B38 /* eng.traineddata */,
+				066188EC18005C8200982B38 /* equ.traineddata */,
+				066188ED18005C8200982B38 /* grc.traineddata */,
+				066188EE18005C8200982B38 /* ita.traineddata */,
+			);
+			name = tessdata;
+			path = TesseractOCR/tessdata;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0661887418002A8A00982B38 /* Tax8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 066188AA18002A8A00982B38 /* Build configuration list for PBXNativeTarget "Tax8" */;
+			buildPhases = (
+				0661887118002A8A00982B38 /* Sources */,
+				0661887218002A8A00982B38 /* Frameworks */,
+				0661887318002A8A00982B38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tax8;
+			productName = Tax8;
+			productReference = 0661887518002A8A00982B38 /* Tax8.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0661889818002A8A00982B38 /* Tax8Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 066188AD18002A8A00982B38 /* Build configuration list for PBXNativeTarget "Tax8Tests" */;
+			buildPhases = (
+				0661889518002A8A00982B38 /* Sources */,
+				0661889618002A8A00982B38 /* Frameworks */,
+				0661889718002A8A00982B38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0661889F18002A8A00982B38 /* PBXTargetDependency */,
+			);
+			name = Tax8Tests;
+			productName = Tax8Tests;
+			productReference = 0661889918002A8A00982B38 /* Tax8Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0661886D18002A8A00982B38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Osamu Noguchi";
+				TargetAttributes = {
+					0661889818002A8A00982B38 = {
+						TestTargetID = 0661887418002A8A00982B38;
+					};
+				};
+			};
+			buildConfigurationList = 0661887018002A8A00982B38 /* Build configuration list for PBXProject "Tax8" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0661886C18002A8A00982B38;
+			productRefGroup = 0661887618002A8A00982B38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0661887418002A8A00982B38 /* Tax8 */,
+				0661889818002A8A00982B38 /* Tax8Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0661887318002A8A00982B38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				066188EF18005C8200982B38 /* eng.traineddata in Resources */,
+				0661889418002A8A00982B38 /* Images.xcassets in Resources */,
+				066188F218005C8200982B38 /* ita.traineddata in Resources */,
+				066188F41800684600982B38 /* test.png in Resources */,
+				066188F018005C8200982B38 /* equ.traineddata in Resources */,
+				0661888318002A8A00982B38 /* InfoPlist.strings in Resources */,
+				066188F118005C8200982B38 /* grc.traineddata in Resources */,
+				0661888C18002A8A00982B38 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0661889718002A8A00982B38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				066188A518002A8A00982B38 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0661887118002A8A00982B38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0661888918002A8A00982B38 /* AppDelegate.m in Sources */,
+				0661888F18002A8A00982B38 /* MasterViewController.m in Sources */,
+				0661888518002A8A00982B38 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0661889518002A8A00982B38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				066188A718002A8A00982B38 /* Tax8Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0661889F18002A8A00982B38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0661887418002A8A00982B38 /* Tax8 */;
+			targetProxy = 0661889E18002A8A00982B38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0661888118002A8A00982B38 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0661888218002A8A00982B38 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0661888A18002A8A00982B38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0661888B18002A8A00982B38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		066188A318002A8A00982B38 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				066188A418002A8A00982B38 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		066188A818002A8A00982B38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lstdc++",
+				);
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		066188A918002A8A00982B38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lstdc++",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		066188AB18002A8A00982B38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Atrac/Documents/workspace/iOS/Tax8/TesseractOCR,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tax8/Tax8-Prefix.pch";
+				INFOPLIST_FILE = "Tax8/Tax8-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Atrac/Documents/workspace/iOS/Tesseract-OCR-iOS/TesseractOCR/lib",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		066188AC18002A8A00982B38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Atrac/Documents/workspace/iOS/Tax8/TesseractOCR,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tax8/Tax8-Prefix.pch";
+				INFOPLIST_FILE = "Tax8/Tax8-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Atrac/Documents/workspace/iOS/Tesseract-OCR-iOS/TesseractOCR/lib",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		066188AE18002A8A00982B38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tax8.app/Tax8";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tax8/Tax8-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tax8Tests/Tax8Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		066188AF18002A8A00982B38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tax8.app/Tax8";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tax8/Tax8-Prefix.pch";
+				INFOPLIST_FILE = "Tax8Tests/Tax8Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0661887018002A8A00982B38 /* Build configuration list for PBXProject "Tax8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				066188A818002A8A00982B38 /* Debug */,
+				066188A918002A8A00982B38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		066188AA18002A8A00982B38 /* Build configuration list for PBXNativeTarget "Tax8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				066188AB18002A8A00982B38 /* Debug */,
+				066188AC18002A8A00982B38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		066188AD18002A8A00982B38 /* Build configuration list for PBXNativeTarget "Tax8Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				066188AE18002A8A00982B38 /* Debug */,
+				066188AF18002A8A00982B38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0661886D18002A8A00982B38 /* Project object */;
+}
